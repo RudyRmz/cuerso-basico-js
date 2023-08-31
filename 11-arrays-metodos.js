@@ -61,3 +61,29 @@ function solution(arraySecreto) {
 
 console.log(solution(["Huevo", "Gallina", "Vaca"]))
 console.log(solution([1, "Gallina", "Vaca"]))
+
+///////////////////
+//Crear una funcion que reciba dos parametros, el primero sera un caracter que se busque en el parametro 2 y lo reemplaze con una X, retorna el resultado del string 
+
+const reemplazo = (caracter, palabra) => palabra.replaceAll(caracter, 'X')
+
+console.log(reemplazo('o', 'Hola Mundo'));
+
+// Teniendo un numero de tarjeta 2345 0967 0938 8943 debemos mostrarle los ultimos 4 digitos al usuario, utiliza los metodos de string para resolverlo
+// '2345 0967 0938 8943'
+// '************8943'
+
+// Crear una funcion que convierta un string en 2 al partir por la mitad el string originial retorna el resultado, usando los metodos de string
+
+const solution = (numeroTarjeta) =>(numeroTarjeta.replaceAll(' ', '').slice(12).padStart(12, "*"))
+
+console.log(solution("2345 0967 0938 8943"));  
+
+//Crear una funcion que convierta un string en 2 al partir por la mitad el string originial retorna el resultado, usando los metodos de string
+
+function dividirString(cadena){
+    return cadena.split(' ');
+}
+
+console.log(dividirString("Hola mundo"));
+
