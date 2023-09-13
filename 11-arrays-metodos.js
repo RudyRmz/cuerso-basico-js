@@ -18,7 +18,7 @@ console.log(frutas);
 let posicion = frutas.indexOf('Pera'); //indexOf busca la posicion de un elemento en el array
 console.log(posicion);
 
-let nuevaLongitud2 = frutas.splice(2, 1); //splice elimina elementos del array
+let nuevaLongitud2 = frutas.splice(0, 2); //splice elimina elementos del array
 console.log(nuevaLongitud2);
 
 let cadenaFrutas = 'Las Frutas son muy ricas '
@@ -86,4 +86,5 @@ function dividirString(cadena){
 }
 
 console.log(dividirString("Hola mundo"));
+
 
